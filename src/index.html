@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Tailwind Project</title>
+  </head>
+  <body
+    class="min-h-screen bg-white text-gray-700 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300"
+  >
+    <nav
+      class="shadow-lg bg-white dark:bg-gray-800 transition-colors duration-300"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <a href="" class="flex items-center px-2">
+              <img class="w-8 h-8 mr-2" src="images/logo.png" alt="" />
+              <span
+                class="text-lg font-semibold text-gray-700 dark:text-gray-300"
+                >Tailwind Project</span
+              >
+            </a>
+          </div>
+          <div class="flex items-center">
+            <button
+              id="mobile-menu-button"
+              class="md:hidden p-2 text-gray-700 dark:text-gray-300"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+            <div
+              id="mobile-menu"
+              class="hidden md:flex md:items-center md:space-x-4 flex-col md:flex-row absolute md:static top-16 left-0 w-full md:w-auto bg-white dark:bg-gray-800 md:bg-transparent md:dark:bg-transparent p-4 md:p-0 shadow-md md:shadow-none transition-colors duration-300"
+            >
+              <a
+                href=""
+                class="px-2 py-1 text-gray-700 dark:text-gray-300 font-semibold border-b-2 border-green-500 hover:text-green-500 transition duration-300"
+                >Home</a
+              >
+              <a
+                href=""
+                class="px-2 py-1 text-gray-700 dark:text-gray-300 font-semibold hover:text-green-500 transition duration-300"
+                >Services</a
+              >
+              <a
+                href=""
+                class="px-2 py-1 text-gray-700 dark:text-gray-300 font-semibold hover:text-green-500 transition duration-300"
+                >About</a
+              >
+              <a
+                href=""
+                class="px-2 py-1 text-gray-700 dark:text-gray-300 font-semibold hover:text-green-500 transition duration-300"
+                >Contact</a
+              >
+              <button
+                id="theme-toggle"
+                class="px-2 py-1 text-gray-700 dark:text-gray-300 font-semibold hover:text-green-500 transition duration-300"
+              >
+                Toggle dark mode
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main
+      class="mt-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28"
+    >
+      <div class="text-center lg:text-left">
+        <h1
+          class="text-3xl tracking-tight font-extrabold sm:text-4xl md:text-5xl lg:text-6xl text-gray-900 dark:text-white"
+        >
+          <span class="block xl:inline">Premium Projects </span>
+          <span class="text-green-500 block xl:inline">Non-Premium Prices</span>
+        </h1>
+        <p
+          class="text-gray-500 dark:text-gray-400 mt-3 text-base sm:text-lg md:text-xl lg:max-w-2xl lg:mx-0"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis,
+          quibusdam necessitatibus aliquid unde non neque magni minus. Atque,
+          laudantium nostrum?
+        </p>
+        <div
+          class="mt-5 flex flex-col items-center space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4 sm:justify-center lg:justify-start"
+        >
+          <a
+            href="#"
+            class="bg-green-500 text-white rounded-md px-6 py-3 sm:px-8 hover:bg-green-600 transition w-full sm:w-auto text-center"
+            >View Projects</a
+          >
+          <a
+            href="#"
+            class="bg-green-300 text-green-800 px-6 py-3 sm:px-8 rounded-md hover:bg-green-400 transition w-full sm:w-auto text-center dark:bg-green-700 dark:text-green-100 dark:hover:bg-green-600"
+            >Explore Location</a
+          >
+        </div>
+      </div>
+    </main>
+    <div class="mt-5 p-6 sm:p-10 flex justify-center">
+      <h2 class="text-2xl sm:text-3xl text-gray-500 dark:text-gray-300 mb-2">
+        Recent Properties
+      </h2>
+    </div>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-4 sm:p-6 lg:p-10 gap-4 sm:gap-6 max-w-7xl mx-auto"
+    >
+      <div
+        class="shadow-lg rounded overflow-hidden bg-white dark:bg-gray-800 transition-colors duration-300"
+      >
+        <img src="images/home1.jpg" class="w-full h-48 object-cover" alt="" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-gray-900 dark:text-white">
+            Paris Villa
+          </div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
+            Paris Villa is a peaceful and elegant home in the heart of the city.
+            With beautiful gardens, sunny rooms, and views of the Eiffel Tower,
+            it offers comfort and charm for anyone who wants to enjoy the true
+            beauty of Paris.
+          </p>
+        </div>
+        <div class="px-6 pt-4">
+          <span class="text-green-500 font-bold text-sm">$8,300,900</span>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span
+            class="bg-gray-200 dark:bg-gray-700 dark:text-gray-100 rounded-full px-3 py-1 font-semibold text-sm"
+            >8 Beds</span
+          >
+          <span
+            class="bg-gray-200 dark:bg-gray-700 dark:text-gray-100 rounded-full px-3 py-1 font-semibold text-sm"
+            >6 Baths</span
+          >
+        </div>
+        <div class="px-6 pt-4 pb-6">
+          <button
+            class="bg-green-500 hover:bg-green-600 transition rounded-full px-3 py-1 font-bold text-white w-full sm:w-auto"
+          >
+            View Properties
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="shadow-lg rounded overflow-hidden bg-white dark:bg-gray-800 transition-colors duration-300"
+      >
+        <img src="images/home2.jpg" class="w-full h-48 object-cover" alt="" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-gray-900 dark:text-white">
+            Paris Villa
+          </div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
+            Paris Villa is a peaceful and elegant home in the heart of the city.
+            With beautiful gardens, sunny rooms, and views of the Eiffel Tower,
+            it offers comfort and charm for anyone who wants to enjoy the true
+            beauty of Paris.
+          </p>
+        </div>
+        <div class="px-6 pt-4">
+          <span class="text-green-500 font-bold text-sm">$8,300,900</span>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span
+            class="bg-gray-200 dark:bg-gray-700 dark:text-gray-100 rounded-full px-3 py-1 font-semibold text-sm"
+            >8 Beds</span
+          >
+          <span
+            class="bg-gray-200 dark:bg-gray-700 dark:text-gray-100 rounded-full px-3 py-1 font-semibold text-sm"
+            >6 Baths</span
+          >
+        </div>
+        <div class="px-6 pt-4 pb-6">
+          <button
+            class="bg-green-500 hover:bg-green-600 transition rounded-full px-3 py-1 font-bold text-white w-full sm:w-auto"
+          >
+            View Properties
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="shadow-lg rounded overflow-hidden bg-white dark:bg-gray-800 transition-colors duration-300"
+      >
+        <img src="images/home3.jpg" class="w-full h-48 object-cover" alt="" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-gray-900 dark:text-white">
+            Paris Villa
+          </div>
+          <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
+            Paris Villa is a peaceful and elegant home in the heart of the city.
+            With beautiful gardens, sunny rooms, and views of the Eiffel Tower,
+            it offers comfort and charm for anyone who wants to enjoy the true
+            beauty of Paris.
+          </p>
+        </div>
+        <div class="px-6 pt-4">
+          <span class="text-green-500 font-bold text-sm">$8,300,900</span>
+        </div>
+        <div class="px-6 pt-4 pb-2">
+          <span
+            class="bg-gray-200 dark:bg-gray-700 dark:text-gray-100 rounded-full px-3 py-1 font-semibold text-sm"
+            >8 Beds</span
+          >
+          <span
+            class="bg-gray-200 dark:bg-gray-700 dark:text-gray-100 rounded-full px-3 py-1 font-semibold text-sm"
+            >6 Baths</span
+          >
+        </div>
+        <div class="px-6 pt-4 pb-6">
+          <button
+            class="bg-green-500 hover:bg-green-600 transition rounded-full px-3 py-1 font-bold text-white w-full sm:w-auto"
+          >
+            View Properties
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="py-20 sm:py-32 lg:py-40 bg-cover bg-center"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url('images/bg.jpg');
+      "
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-2">
+          Experience Luxury Like Never Before
+        </h2>
+        <p class="text-white mb-8 text-xl sm:text-2xl">
+          60+ Exotic Locations Across the Globe
+        </p>
+        <button
+          class="text-white uppercase font-bold border-2 border-white px-6 py-3 sm:px-8 sm:py-4 tracking-wider hover:bg-gray-200 hover:text-black transition"
+        >
+          Explore Locations
+        </button>
+      </div>
+    </div>
+    <div class="mt-5 p-6 sm:p-10 flex justify-center">
+      <h2 class="text-2xl sm:text-3xl text-gray-500 dark:text-gray-300 mb-5">
+        Locations
+      </h2>
+    </div>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-4 sm:p-6 lg:p-10 gap-4 sm:gap-6 max-w-7xl mx-auto"
+    >
+      <div
+        class="shadow-lg rounded overflow-hidden bg-white dark:bg-gray-800 transition-colors duration-300"
+      >
+        <img
+          class="w-full h-48 object-cover"
+          src="images/location1.jpg"
+          alt=""
+        />
+        <div class="px-4 py-4">
+          <h2 class="font-bold text-xl text-gray-900 dark:text-white">Kabul</h2>
+          <p
+            class="text-gray-700 dark:text-gray-300 mt-2 mb-4 text-sm sm:text-base"
+          >
+            Known as “The City That Never Sleeps,” it is full of life, tall
+            skyscrapers, busy streets, and endless opportunities. From the
+            bright lights of Times Square to the peaceful paths of Central Park,
+            New York offers a mix of excitement and beauty.
+          </p>
+        </div>
+      </div>
+      <div
+        class="shadow-lg rounded overflow-hidden bg-white dark:bg-gray-800 transition-colors duration-300"
+      >
+        <img
+          class="w-full h-48 object-cover"
+          src="images/location2.jpg"
+          alt=""
+        />
+        <div class="px-4 py-4">
+          <h2 class="font-bold text-xl text-gray-900 dark:text-white">Herat</h2>
+          <p
+            class="text-gray-700 dark:text-gray-300 mt-2 mb-4 text-sm sm:text-base"
+          >
+            Known as “The City That Never Sleeps,” it is full of life, tall
+            skyscrapers, busy streets, and endless opportunities. From the
+            bright lights of Times Square to the peaceful paths of Central Park,
+            New York offers a mix of excitement and beauty.
+          </p>
+        </div>
+      </div>
+      <div
+        class="shadow-lg rounded overflow-hidden bg-white dark:bg-gray-800 transition-colors duration-300"
+      >
+        <img
+          class="w-full h-48 object-cover"
+          src="images/location3.jpg"
+          alt=""
+        />
+        <div class="px-4 py-4">
+          <h2 class="font-bold text-xl text-gray-900 dark:text-white">
+            Badakhshan
+          </h2>
+          <p
+            class="text-gray-700 dark:text-gray-300 mt-2 mb-4 text-sm sm:text-base"
+          >
+            Known as “The City That Never Sleeps,” it is full of life, tall
+            skyscrapers, busy streets, and endless opportunities. From the
+            bright lights of Times Square to the peaceful paths of Central Park,
+            New York offers a mix of excitement and beauty.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-gradient-to-r from-green-500 to-green-200 py-20 transition-colors duration-300 dark:bg-gradient-to-r dark:from-gray-700 dark:to-gray-800"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl text-white font-bold mb-2">
+          Save up to 60% on broker commissions
+        </h2>
+        <h3 class="text-xl sm:text-2xl text-white mb-8">
+          Lowest Brokerage Fees
+        </h3>
+        <button
+          class="bg-white border-2 font-bold rounded-2xl uppercase tracking-wider shadow-lg px-6 py-3 sm:px-8 sm:py-4 text-green-700 dark:bg-white dark:text-gray-600 dark:border-gray-800"
+        >
+          Enquire
+        </button>
+      </div>
+    </div>
+    <div class="mt-5 p-6 sm:p-10 flex justify-center">
+      <h2 class="text-gray-500 dark:text-gray-300 text-2xl sm:text-3xl mb-2">
+        What clients say about us?
+      </h2>
+    </div>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-4 sm:p-6 lg:p-10 gap-4 sm:gap-6 max-w-7xl mx-auto"
+    >
+      <div
+        class="shadow-lg rounded-xl p-4 w-full max-w-xs mx-auto bg-white dark:bg-slate-800 transition-colors duration-300"
+      >
+        <p class="mb-1 text-sm sm:text-base text-gray-700 dark:text-gray-500">
+          <span class="text-green-500 text-lg font-bold">"</span> Kabul is a
+          city where history whispers through ancient walls, mountains stand as
+          silent guardians.
+          <span class="text-green-500 text-lg font-bold">"</span>
+        </p>
+        <div class="flex bg-green-100 dark:bg-gray-700 rounded-full mb-4">
+          <div class="py-1 pl-1">
+            <img
+              class="h-10 w-10 rounded-full mx-auto border-green-500 border-2"
+              src="images/avatar1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col justify-between ml-2 py-1">
+            <span class="text-sm text-green-800 dark:text-green-500">Ali</span>
+            <span class="text-xs text-gray-600 dark:text-gray-100"
+              >Director</span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="shadow-lg rounded-xl p-4 w-full max-w-xs mx-auto bg-white dark:bg-slate-800 transition-colors duration-300"
+      >
+        <p class="mb-1 text-sm sm:text-base text-gray-700 dark:text-gray-500">
+          <span class="text-green-500 text-lg font-bold">"</span> Kabul is a
+          city where history whispers through ancient walls, mountains stand as
+          silent guardians.
+          <span class="text-green-500 text-lg font-bold">"</span>
+        </p>
+        <div class="flex bg-green-100 dark:bg-gray-700 rounded-full mb-4">
+          <div class="py-1 pl-1">
+            <img
+              class="h-10 w-10 rounded-full mx-auto border-green-500 border-2"
+              src="images/avatar2.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col justify-between ml-2 py-1">
+            <span class="text-sm text-green-800 dark:text-green-500"
+              >Marwa</span
+            >
+            <span class="text-xs text-gray-600 dark:text-gray-100"
+              >Developer</span
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="shadow-lg rounded-xl p-4 w-full max-w-xs mx-auto bg-white dark:bg-slate-800 transition-colors duration-300"
+      >
+        <p class="mb-1 text-sm sm:text-base text-gray-700 dark:text-gray-500">
+          <span class="text-green-500 text-lg font-bold">"</span> Kabul is a
+          city where history whispers through ancient walls, mountains stand as
+          silent guardians.
+          <span class="text-green-500 text-lg font-bold">"</span>
+        </p>
+        <div class="flex bg-green-100 dark:bg-gray-700 rounded-full mb-4">
+          <div class="py-1 pl-1">
+            <img
+              class="h-10 w-10 rounded-full mx-auto border-green-500 border-2"
+              src="images/avatar3.jpg"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col justify-between ml-2 py-1">
+            <span class="text-sm text-green-800 dark:text-green-500"
+              >Karima</span
+            >
+            <span class="text-xs text-gray-600 dark:text-gray-100"
+              >Manager</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5 p-6 sm:p-10 flex justify-center">
+      <h2 class="text-gray-500 dark:text-gray-300 text-2xl sm:text-3xl mb-2">
+        Contact Us
+      </h2>
+    </div>
+    <div
+      class="bg-green-300 dark:bg-gray-800 mt-5 flex justify-center p-4 sm:p-6 lg:p-10 transition-colors duration-300"
+    >
+      <form action="" class="max-w-lg w-full">
+        <div class="flex flex-wrap -mx-3">
+          <div class="w-full px-3 sm:w-1/2">
+            <label
+              class="uppercase block mb-2 tracking-wider text-xs text-gray-700 dark:text-gray-100 font-bold"
+              >First Name</label
+            >
+            <input
+              class="block bg-white dark:bg-gray-700 mb-3 py-3 px-4 rounded text-gray-700 dark:text-gray-100 w-full"
+              type="text"
+              placeholder="Ali"
+            />
+            <p class="text-sm text-green-700 dark:text-green-200 italic">
+              Please fill out this field
+            </p>
+          </div>
+          <div class="w-full px-3 sm:w-1/2">
+            <label
+              class="uppercase block mb-2 tracking-wider text-xs text-gray-700 dark:text-gray-100 font-bold"
+              >Last Name</label
+            >
+            <input
+              class="block bg-white dark:bg-gray-700 mb-3 py-3 px-4 rounded w-full text-gray-700 dark:text-gray-100"
+              type="text"
+              placeholder="Karimi"
+            />
+          </div>
+        </div>
+        <div class="w-full px-3 mt-3">
+          <label
+            class="uppercase block mb-2 tracking-wider text-xs text-gray-700 dark:text-gray-100 font-bold"
+            >Email</label
+          >
+          <input
+            class="block bg-white dark:bg-gray-700 mb-3 py-3 px-4 rounded w-full text-gray-700 dark:text-gray-100"
+            type="text"
+            placeholder="ali@gmail.com"
+          />
+          <p class="text-sm italic">Please fill out this field</p>
+        </div>
+        <div class="w-full px-3 mt-3">
+          <label
+            class="uppercase block mb-2 tracking-wider text-xs text-gray-700 dark:text-gray-100 font-bold"
+            >Message</label
+          >
+          <textarea
+            placeholder="Your message"
+            class="block bg-white dark:bg-gray-700 mb-3 py-3 px-4 rounded w-full text-gray-700 dark:text-gray-100 resize-none h-48"
+          ></textarea>
+          <p class="text-sm italic">Please fill out this field</p>
+        </div>
+        <button
+          class="bg-green-500 hover:bg-green-600 rounded text-white px-4 py-2 mt-2 w-full sm:w-auto"
+        >
+          Send
+        </button>
+      </form>
+    </div>
+    <footer
+      class="pt-10 sm:pt-20 px-4 bg-white dark:bg-gray-900 transition-colors duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col items-center text-center lg:flex-row lg:items-start lg:text-left lg:justify-between"
+      >
+        <div class="lg:w-1/3 mb-10 lg:mb-0">
+          <a
+            href="#"
+            class="flex items-center justify-center lg:justify-start space-x-2"
+          >
+            <img src="images/logo.png" alt="Logo" class="h-8 w-8" />
+            <span
+              class="text-gray-700 dark:text-gray-300 font-semibold text-xl sm:text-2xl"
+              >Tailwind Project</span
+            >
+          </a>
+        </div>
+        <div
+          class="lg:w-2/3 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-gray-700 dark:text-gray-400"
+        >
+          <div>
+            <h3 class="text-green-500 uppercase tracking-wider mb-2">
+              Products
+            </h3>
+            <ul class="space-y-1 text-sm sm:text-base">
+              <li><a href="#">Feature</a></li>
+              <li><a href="#">Integrations</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-green-500 uppercase tracking-wider mb-2">
+              Company
+            </h3>
+            <ul class="space-y-1 text-sm sm:text-base">
+              <li><a href="#">Feature</a></li>
+              <li><a href="#">Integrations</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-green-500 uppercase tracking-wider mb-2">
+              Developers
+            </h3>
+            <ul class="space-y-1 text-sm sm:text-base">
+              <li><a href="#">Feature</a></li>
+              <li><a href="#">Integrations</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-green-500 uppercase tracking-wider mb-2">
+              Social Media
+            </h3>
+            <ul class="space-y-3 text-sm sm:text-base">
+              <li class="flex items-center justify-center lg:justify-start">
+                <svg
+                  class="h-5 w-5 text-blue-600"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2c0-2 1.2-3 3-3h2v3h-2c-.5 0-1 .5-1 1v1h3l-1 3h-2v7A10 10 0 0 0 22 12Z"
+                  />
+                </svg>
+                <span class="ml-2">Facebook</span>
+              </li>
+              <li class="flex items-center justify-center lg:justify-start">
+                <svg
+                  class="h-5 w-5 text-sky-500"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.4 1c-.88.52-1.85.9-2.88 1.1A4.48 4.48 0 0 0 16.5 0a4.48 4.48 0 0 0-4.47 4.47c0 .35.04.7.12 1A12.8 12.8 0 0 1 1.64.88 4.48 4.48 0 0 0 3 6.32a4.41 4.41 0 0 1-2-.55v.06a4.47 4.47 0 0 0 3.58 4.39 4.52 4.52 0 0 1-2 .07A4.48 4.48 0 0 0 6.29 15a9 9 0 0 1-5.6 1.9A9.14 9.14 0 0 1 0 16.9a12.74 12.74 0 0 0 6.92 2.03A12.8 12.8 0 0 0 19.93 6.7 9.18 9.18 0 0 0 23 3Z"
+                  />
+                </svg>
+                <span class="ml-2">Twitter</span>
+              </li>
+              <li class="flex items-center justify-center lg:justify-start">
+                <svg
+                  class="h-5 w-5 fill-current"
+                  viewBox="0 0 512 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g>
+                    <circle cx="256" cy="256" r="256" class="text-sky-500" />
+                    <g>
+                      <path
+                        fill="#ffffff"
+                        d="M380.6,147.3l-45.7,230.5c0,0-6.4,16-24,8.3l-105.5-80.9L167,286.7l-64.6-21.7c0,0-9.9-3.5-10.9-11.2 c-1-7.7,11.2-11.8,11.2-11.8l256.8-100.7C359.5,141.2,380.6,131.9,380.6,147.3z"
+                      />
+                      <path
+                        fill="#d2e4f0"
+                        d="M197.2,375.2c0,0-3.1-0.3-6.9-12.4c-3.8-12.1-23.3-76.1-23.3-76.1l155.1-98.5c0,0,9-5.4,8.6,0 c0,0,1.6,1-3.2,5.4c-4.8,4.5-121.8,109.7-121.8,109.7"
+                      />
+                      <path
+                        fill="#b5cfe4"
+                        d="M245.8,336.2l-41.7,38.1c0,0-3.3,2.5-6.8,0.9l8-70.7"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <span class="ml-2">Telegram</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <hr class="mt-10 dark:border-gray-700" />
+    <div class="text-center text-green-500 text-sm py-6">@Copyright 2025</div>
+
+    <script>
+      // Dark mode toggle functionality
+      const themeToggle = document.getElementById("theme-toggle");
+      const htmlElement = document.documentElement;
+
+      // Initial setup: Check localStorage, or system preference, and apply 'dark' class
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      const storedTheme = localStorage.getItem("theme");
+
+      if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+        htmlElement.classList.add("dark");
+        themeToggle.textContent = "Toggle light mode";
+      } else {
+        htmlElement.classList.remove("dark");
+        themeToggle.textContent = "Toggle dark mode";
+      }
+
+      themeToggle.addEventListener("click", () => {
+        if (htmlElement.classList.contains("dark")) {
+          htmlElement.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+          themeToggle.textContent = "Toggle dark mode";
+        } else {
+          htmlElement.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+          themeToggle.textContent = "Toggle light mode";
+        }
+      });
+
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (
+          !mobileMenu.contains(e.target) &&
+          !mobileMenuButton.contains(e.target)
+        ) {
+          mobileMenu.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
