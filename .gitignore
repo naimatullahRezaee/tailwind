@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# Build output (optional – ignore if auto-generated)
+src/output.css
+
+# Environment files
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE settings
+.vscode/
+.idea/
+
+# Cache folders
+.cache/
+.dist/
